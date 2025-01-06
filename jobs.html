@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Opportunities</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: rgba(0, 123, 255, 0.9);
+            color: white;
+            text-align: center;
+            padding: 1.5em 0;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+        .job-card {
+            background: white;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+        }
+        .job-card h3 {
+            color: #007bff;
+            margin: 0 0 10px;
+        }
+        .job-card p {
+            margin: 5px 0;
+            color: #555;
+        }
+        .job-card a {
+            align-self: flex-start;
+            margin-top: 10px;
+            padding: 8px 15px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .job-card a:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            background-color: rgba(0, 123, 255, 0.9);
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            margin-top: 20px;
+        }
+
+        /* Form styling */
+        .job-form {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .job-form input, .job-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .job-form button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .job-form button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Responsive Design */
+        @media (min-width: 768px) {
+            .job-card {
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .job-card h3 {
+                margin: 0;
+            }
+            .job-card a {
+                margin-top: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Work Opportunities</h1>
+        <p>Find, apply for jobs, or create new opportunities in your community</p>
+    </header>
+
+    <div class="container">
+        <!-- Job Creation Form -->
+        <div class="job-form">
+            <h2>Create a Job Opportunity</h2>
+            <form id="create-job-form">
+                <label for="job-title">Job Title</label>
+                <input type="text" id="job-title" name="job-title" required placeholder="e.g. Plumber, Cook, Carpenter">
+
+                <label for="job-location">Location</label>
+                <input type="text" id="job-location" name="job-location" required placeholder="e.g. Rural Village 1">
+
+                <label for="job-description">Job Description</label>
+                <textarea id="job-description" name="job-description" required placeholder="Describe the job role..."></textarea>
+
+                <label for="salary">Salary</label>
+                <input type="text" id="salary" name="salary" required placeholder="e.g. ₹10,000 - ₹15,000 per month">
+
+                <button type="submit">Post Job</button>
+            </form>
+        </div>
+
+        <!-- Example Job Postings -->
+
+        <div class="job-card">
+            <div>
+                <h3>Farm Equipment Operator</h3>
+                <p><strong>Location:</strong> Rural Village 1</p>
+                <p><strong>Job Description:</strong> Operate and maintain farm equipment for harvesting and planting.</p>
+                <p><strong>Salary:</strong> ₹15,000 - ₹20,000 per month</p>
+            </div>
+            <a href="#">Apply Now</a>
+        </div>
+
+        <div class="job-card">
+            <div>
+                <h3>Handicraft Trainer</h3>
+                <p><strong>Location:</strong> Rural Village 2</p>
+                <p><strong>Job Description:</strong> Teach local women and youth to create marketable handicrafts.</p>
+                <p><strong>Salary:</strong> ₹12,000 - ₹18,000 per month</p>
+            </div>
+            <a href="#">Apply Now</a>
+        </div>
+
+        <div class="job-card">
+            <div>
+                <h3>Community Health Worker</h3>
+                <p><strong>Location:</strong> Rural Village 3</p>
+                <p><strong>Job Description:</strong> Provide basic healthcare services and education in remote areas.</p>
+                <p><strong>Salary:</strong> ₹10,000 - ₹15,000 per month</p>
+            </div>
+            <a href="#">Apply Now</a>
+        </div>
+
+        <!-- Additional Job Listings -->
+        <div class="job-card">
+            <div>
+                <h3>Plumber</h3>
+                <p><strong>Location:</strong> Rural Village 4</p>
+                <p><strong>Job Description:</strong> Install and repair water pipes, faucets, and other plumbing systems.</p>
+                <p><strong>Salary:</strong> ₹8,000 - ₹12,000 per month</p>
+            </div>
+            <a href="#">Apply Now</a>
+        </div>
+
+        <div class="job-card">
+            <div>
+                <h3>Cook</h3>
+                <p><strong>Location:</strong> Rural Village 5</p>
+                <p><strong>Job Description:</strong> Prepare local dishes and maintain kitchen hygiene for community events.</p>
+                <p><strong>Salary:</strong> ₹6,000 - ₹9,000 per month</p>
+            </div>
+            <a href="#">Apply Now</a>
+        </div>
+
+        <div class="job-card">
+            <div>
+                <h3>Carpenter</h3>
+                <p><strong>Location:</strong> Rural Village 6</p>
+                <p><strong>Job Description:</strong> Build and repair wooden structures, including furniture and buildings.</p>
+                <p><strong>Salary:</strong> ₹10,000 - ₹15,000 per month</p>
+            </div>
+            <a href="#">Apply Now</a>
+        </div>
+
+        <div class="job-card">
+            <div>
+                <h3>Electrician</h3>
+                <p><strong>Location:</strong> Rural Village 7</p>
+                <p><strong>Job Description:</strong> Install, maintain, and repair electrical systems in homes and buildings.</p>
+                <p><strong>Salary:</strong> ₹12,000 - ₹18,000 per month</p>
+            </div>
+            <a href="#">Apply Now</a>
+        </div>
+
+        <div class="job-card">
+            <div>
+                <h3>Gardener</h3>
+                <p><strong>Location:</strong> Rural Village 8</p>
+                <p><strong>Job Description:</strong> Maintain and design gardens and landscapes for homes and farms.</p>
+                <p><strong>Salary:</strong> ₹6,000 - ₹10,000 per month</p>
+            </div>
+            <a href="#">Apply Now</a>
+        </div>
+
+        <div class="job-card">
+            <div>
+                <h3>Tailor</h3>
+                <p><strong>Location:</strong> Rural Village 9</p>
+                <p><strong>Job Description:</strong> Sew and repair clothing for the local community.</p>
+                <p><strong>Salary:</strong> ₹8,000 - ₹12,000 per month</p>
+            </div>
+            <a href="#">Apply Now</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Village Empowerment Platform. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('create-job-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const jobTitle = document.getElementById('job-title').value;
+            const jobLocation = document.getElementById('job-location').value;
+            const jobDescription = document.getElementById('job-description').value;
+            const salary = document.getElementById('salary').value;
+
+            // Here, you can handle the form submission, like sending the data to a backend or saving it locally
+            alert(`Job Opportunity Created: \nTitle: ${jobTitle}\nLocation: ${jobLocation}\nSalary: ${salary}\nDescription: ${jobDescription}`);
+        });
+    </script>
+</body>
+</html>
